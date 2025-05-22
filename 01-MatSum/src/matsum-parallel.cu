@@ -62,7 +62,7 @@ int main(int argc, char **argv) {
   cudaMemcpy(d_B, B, bytes, cudaMemcpyHostToDevice);
 
   // define number of blocks based on number of threads
-  threads = 128;
+  threads = 512;
   blocks = (n + threads - 1)/threads;
 
   // Compute matrix sum on device

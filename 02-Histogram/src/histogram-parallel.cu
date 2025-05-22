@@ -138,7 +138,7 @@ double Histogram(PPMImage *image, float *h) {
   CUDACHECK(cudaEventCreate(&stop));
 
    // define number of blocks based on number of threads
-   int threads = 128;
+   int threads = 512;
    int blocks = (n + threads - 1)/threads;
 
   // Launch kernel and compute kernel runtime.
