@@ -1,0 +1,28 @@
+digraph {
+	tooltip=" "
+	graph [fontname=Arial, nodesep=0.125, ranksep=0.25];
+	node [fontcolor=white, fontname=Arial, height=0, shape=box, style=filled, width=0];
+	edge [fontname=Arial];
+	1 [color="#fe0900", fontcolor="#ffffff", fontsize="10.00", label="mandelbrotSerial(float, float, float, float, int, int, int, int, int, int*)\n99.10%\n(0.10%)\n15×"];
+	1 -> 2 [arrowsize="0.99", color="#fd0a00", fontcolor="#fd0a00", fontsize="10.00", label="99.00%\n18875404×", labeldistance="3.96", penwidth="3.96"];
+	2 [color="#fd0a00", fontcolor="#ffffff", fontsize="10.00", label="mandel(float, float, int)\n99.00%\n(99.00%)\n18875404×"];
+	3 [color="#8ece07", fontcolor="#ffffff", fontsize="10.00", label="main\n66.97%\n(0.00%)"];
+	3 -> 1 [arrowsize="0.57", color="#0b9e6f", fontcolor="#0b9e6f", fontsize="10.00", label="33.03%\n5×", labeldistance="1.32", penwidth="1.32"];
+	3 -> 5 [arrowsize="0.57", color="#0b9e6f", fontcolor="#0b9e6f", fontsize="10.00", label="33.03%\n5×", labeldistance="1.32", penwidth="1.32"];
+	3 -> 11 [arrowsize="0.35", color="#0d1074", fontcolor="#0d1074", fontsize="10.00", label="0.70%\n2×", labeldistance="0.50", penwidth="0.50"];
+	4 [color="#86cd07", fontcolor="#ffffff", fontsize="10.00", label="workerThreadStart(WorkerArgs*)\n66.07%\n(0.00%)\n10×"];
+	4 -> 1 [arrowsize="0.81", color="#86cd07", fontcolor="#86cd07", fontsize="10.00", label="66.07%\n10×", labeldistance="2.64", penwidth="2.64"];
+	5 [color="#0b9e6f", fontcolor="#ffffff", fontsize="10.00", label="mandelbrotThread(int, float, float, float, float, int, int, int, int*)\n33.03%\n(0.00%)\n5×"];
+	5 -> 4 [arrowsize="0.57", color="#0b9e6f", fontcolor="#0b9e6f", fontsize="10.00", label="33.03%\n5×", labeldistance="1.32", penwidth="1.32"];
+	6 [color="#0b9e6f", fontcolor="#ffffff", fontsize="10.00", label="void std::thread::_Invoker<std::tuple<void (*)(WorkerArgs*), WorkerArgs*> >::_M_invoke<0ul, 1ul>(std::_Index_tuple<0ul, 1ul>)\n33.03%\n(0.00%)\n5×"];
+	6 -> 9 [arrowsize="0.57", color="#0b9e6f", fontcolor="#0b9e6f", fontsize="10.00", label="33.03%\n5×", labeldistance="1.32", penwidth="1.32"];
+	7 [color="#0b9e6f", fontcolor="#ffffff", fontsize="10.00", label="std::thread::_Invoker<std::tuple<void (*)(WorkerArgs*), WorkerArgs*> >::operator()()\n33.03%\n(0.00%)\n5×"];
+	7 -> 6 [arrowsize="0.57", color="#0b9e6f", fontcolor="#0b9e6f", fontsize="10.00", label="33.03%\n5×", labeldistance="1.32", penwidth="1.32"];
+	8 [color="#0b9e6f", fontcolor="#ffffff", fontsize="10.00", label="void std::__invoke_impl<void, void (*)(WorkerArgs*), WorkerArgs*>(std::__invoke_other, void (*&&)(WorkerArgs*), WorkerArgs*&&)\n33.03%\n(0.00%)\n5×"];
+	8 -> 4 [arrowsize="0.57", color="#0b9e6f", fontcolor="#0b9e6f", fontsize="10.00", label="33.03%\n5×", labeldistance="1.32", penwidth="1.32"];
+	9 [color="#0b9e6f", fontcolor="#ffffff", fontsize="10.00", label="std::__invoke_result<void (*)(WorkerArgs*), WorkerArgs*>::type std::__invoke<void (*)(WorkerArgs*), WorkerArgs*>(void (*&&)(WorkerArgs*), WorkerArgs*&&)\n33.03%\n(0.00%)\n5×"];
+	9 -> 8 [arrowsize="0.57", color="#0b9e6f", fontcolor="#0b9e6f", fontsize="10.00", label="33.03%\n5×", labeldistance="1.32", penwidth="1.32"];
+	10 [color="#0b9e6f", fontcolor="#ffffff", fontsize="10.00", label="std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(WorkerArgs*), WorkerArgs*> > >::_M_run()\n33.03%\n(0.00%)"];
+	10 -> 7 [arrowsize="0.57", color="#0b9e6f", fontcolor="#0b9e6f", fontsize="10.00", label="33.03%\n5×", labeldistance="1.32", penwidth="1.32"];
+	11 [color="#0d1074", fontcolor="#ffffff", fontsize="10.00", label="writePPMImage(int*, int, int, char const*, int)\n0.70%\n(0.40%)\n2×"];
+}
