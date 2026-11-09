@@ -82,3 +82,9 @@ To complete these labs, you will need a basic understanding of the C or C++ prog
 ## Contributing
 
 If you find any issues with the labs or have suggestions for improvements, feel free to create an issue or pull request on this repository.
+
+## About
+
+This repository is one of the assignments handed out to the students in the course
+"MC970 - Introduction to Parallel Programming" offered by the Institute of
+Computing at Unicamp.
