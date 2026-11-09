@@ -75,3 +75,9 @@ Refer to the previous assignment for a list of tools and usage example.
 ## Contributing
 
 If you find any issues or have suggestions, feel free to create an issue or pull request. Your feedback is welcome!
+
+## About
+
+This repository is one of the assignments handed out to the students in the course
+"MC970 - Introduction to Parallel Programming" offered by the Institute of
+Computing at Unicamp.
