@@ -1,0 +1,1 @@
+Add gperftools profiler delimiter functions in the code, runs to generate .prof files, use google-pprof --gv ./bin bin.prof to show nodes graph. See help to other options
